@@ -5,14 +5,16 @@ public class RetrieveRandomItemActivity {
 
     private static SignedRequestsHelper signedRequestsHelper;
 
-    public static void main(String[] args) {
+    public void orderRandomItem() {
 
         signedRequestsHelper = new SignedRequestsHelper();
         Map<String, String> parameters = new HashMap<>();
 
+        parameters.put("SearchIndex", "All");
         parameters.put("Service", "AWSECommerceService");
-        parameters.put("Operation", "ItemLookup");
-        parameters.put("ItemId", "0679722769");
+        parameters.put("Operation", "ItemSearch");
+        parameters.put("Keywords", "Dildo");
+        parameters.put("AssociateTag", "mobilea0d38bf-20");
 
         String url = signedRequestsHelper.sign(parameters);
 
