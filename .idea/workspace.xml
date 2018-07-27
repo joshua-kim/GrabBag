@@ -20,8 +20,8 @@
           <file leaf-file-name="RetrieveRandomItemActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/java/RetrieveRandomItemActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="40" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="41" />
+                <state relative-caret-position="262">
+                  <caret line="78" column="76" selection-start-line="78" selection-start-column="76" selection-end-line="78" selection-end-column="76" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -58,8 +58,8 @@
           <file leaf-file-name="SignedRequestsHelper.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/java/SignedRequestsHelper.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="19">
-                  <caret line="28" column="75" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
+                <state relative-caret-position="163">
+                  <caret line="24" column="53" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="53" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -83,6 +83,8 @@
       <find>timezone</find>
       <find>awsaccesskeyid</find>
       <find>time</find>
+      <find>get</find>
+      <find>asin=</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,6 +128,11 @@
             <path>
               <item name="GrabBag" type="b2602c69:ProjectViewProjectNode" />
               <item name="GrabBag" type="462c0819:PsiDirectoryNode" />
+              <item name="dictionary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GrabBag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GrabBag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -157,6 +164,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/java" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -275,10 +285,10 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.32872927" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32872927" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -356,10 +366,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/dictionary.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/SignedRequestsHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="28" column="75" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
+        <state relative-caret-position="163">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -368,8 +381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/RetrieveRandomItemActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="41" />
+        <state relative-caret-position="262">
+          <caret line="78" column="76" selection-start-line="78" selection-start-column="76" selection-end-line="78" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
