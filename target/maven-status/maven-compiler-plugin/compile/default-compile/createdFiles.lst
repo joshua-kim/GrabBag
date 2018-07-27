@@ -1,2 +1,4 @@
 com/amazon/ask/grabbag/HelloWorldStreamHandler.class
+com/amazon/ask/grabbag/SignedRequestsHelper.class
+com/amazon/ask/grabbag/RetrieveRandomItemActivity.class
 com/amazon/ask/grabbag/handlers/HelloWorldIntentHandler.class

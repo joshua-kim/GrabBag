@@ -1,5 +1,6 @@
+package com.amazon.ask.grabbag;
+
 import org.apache.http.HttpResponse;
-import org.apache.http.client.fluent.Request;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -14,12 +15,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.*;
 
 public class RetrieveRandomItemActivity {
 
     private static SignedRequestsHelper signedRequestsHelper;
 
-    private String choose(File f) throws FileNotFoundException
+    private static String choose(File f) throws FileNotFoundException
     {
         String result = null;
         Random rand = new Random();
@@ -35,15 +37,19 @@ public class RetrieveRandomItemActivity {
         return result;
     }
 
-    private String getOrderURL() {
+    private static String getOrderURL() {
 
         String product = "";
-
         try {
-            product = choose(new File("src/java/dictionary.txt"));
+            product = choose(new File("src/com/amazon/ask/grabbag/dictionary.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+        List<String> choices = Arrays.asList("book", "food", "candy", "toy", "clothes", "hat", "pants", "amazonbasics");
+        Collections.shuffle(choices);
+
+        product = choices.get(0);
 
         signedRequestsHelper = new SignedRequestsHelper();
         Map<String, String> parameters = new HashMap<>();
@@ -60,7 +66,7 @@ public class RetrieveRandomItemActivity {
 
     }
 
-  public String getRandomItemName() {
+  public static String getRandomItemName() {
         String url = getOrderURL();
 
         CloseableHttpResponse response;
@@ -89,7 +95,7 @@ public class RetrieveRandomItemActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        System.out.println(itemName);
         return itemName;
     }
 }
