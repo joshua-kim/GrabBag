@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e4686c3-1231-418b-8713-7f376824d89b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/RetrieveRandomItemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/RetrieveRandomItemActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RetrieveRandomItemActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RetrieveRandomItemActivity.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +22,8 @@
           <file leaf-file-name="RetrieveRandomItemActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/java/RetrieveRandomItemActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="262">
-                  <caret line="78" column="76" selection-start-line="78" selection-start-column="76" selection-end-line="78" selection-end-column="76" />
+                <state relative-caret-position="319">
+                  <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -381,8 +383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/RetrieveRandomItemActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="78" column="76" selection-start-line="78" selection-start-column="76" selection-end-line="78" selection-end-column="76" />
+        <state relative-caret-position="319">
+          <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

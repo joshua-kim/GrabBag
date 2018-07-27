@@ -19,8 +19,7 @@ public class RetrieveRandomItemActivity {
 
     private static SignedRequestsHelper signedRequestsHelper;
 
-
-    public static String choose(File f) throws FileNotFoundException
+    private String choose(File f) throws FileNotFoundException
     {
         String result = null;
         Random rand = new Random();
@@ -36,7 +35,7 @@ public class RetrieveRandomItemActivity {
         return result;
     }
 
-    public static String getOrderURL() {
+    private String getOrderURL() {
 
         String product = "";
 
@@ -61,12 +60,13 @@ public class RetrieveRandomItemActivity {
 
     }
 
-    public static void main(String[] args) {
+  public String getRandomItemName() {
         String url = getOrderURL();
 
         CloseableHttpResponse response;
 
         String asin = "";
+        String itemName = "";
 
         try {
             CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -75,12 +75,21 @@ public class RetrieveRandomItemActivity {
 
             String responseString = EntityUtils.toString(response.getEntity(), "UTF-8");
 
-            int index = responseString.indexOf("ASIN=") + 5;
-            asin = responseString.substring(index, index + 10);
+            System.out.println(responseString);
+
+            int asinIndex = responseString.indexOf("ASIN=") + 5;
+
+
+            int titleStartIndex = responseString.indexOf("<Title>") + 7;
+            int titleEndIndex = responseString.indexOf("</Title>");
+
+            asin = responseString.substring(asinIndex, asinIndex + 10);
+            itemName = responseString.substring(titleStartIndex, titleEndIndex);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        System.out.println(asin);
+        return itemName;
     }
 }
